@@ -1,3 +1,4 @@
+import {keyObject} from 'config.js';
 var apiKey = keyObject.weatherKey;
 var ipKey = keyObject.ipInfoKey;
 let currentDate = new Date();
@@ -46,7 +47,7 @@ const setDisplay = (data, currentLoc) => {
     }
     let icon = `http://openweathermap.org/img/wn/${currentObject.weather[0].icon}@2x.png`;
     $('#locHead').html(currentObject.name);
-    let currentDiv = 
+    let currentDiv =
 
     `<strong>Today</strong><br>
     ${currentObject.main.temp}&degF<br>
@@ -110,7 +111,7 @@ function init(){
     });
     savedFavs = JSON.parse(window.localStorage.getItem('favorites'));
     for(let x = 0; x < savedFavs.length; x++){
-        let spanEl = document.createElement('span');    
+        let spanEl = document.createElement('span');
         $(spanEl).addClass('emptyHeart');
         $(spanEl).addClass('fullHeart');
         $(spanEl).html('&#9829;');
@@ -123,7 +124,7 @@ function init(){
         $(liEl).attr('tabindex', 0);
         $(liEl).html(`${savedFavs[x].location}&emsp;`);
         $(liEl).append(spanEl);
-        $(liEl).css('display', 'none'); 
+        $(liEl).css('display', 'none');
         $('#favLoc').prepend(liEl);
         $(liEl).slideToggle();
         $(liEl).keypress(function(e) {
@@ -187,7 +188,7 @@ $('#cats').on('mouseover', '.loc', function(e) {
 
 $('#cats').on('mouseout', '.loc', function(e) {
     e.stopPropagation();
-    if($(this).data('heart') == false){ 
+    if($(this).data('heart') == false){
         $(this).children('.emptyHeart').html('');
     }
 });
@@ -237,7 +238,7 @@ $('#cats').on('click', '.emptyHeart', function(e) {
         $(this).html('&#9829;');
         $(this).parent().data('heart', true);
         let fav = $(this).parent().clone(true);
-        $(fav).css('display', 'none'); 
+        $(fav).css('display', 'none');
         $('#favLoc').prepend(fav);
         $(fav).slideToggle();
         if($('#favLoc').children('.loc').length == 5){
@@ -318,7 +319,7 @@ const del = (obj) => {
 
 const setCurrent = (loc, id, current) => {
     let shuffle = false;
-    let spanEl = document.createElement('span');    
+    let spanEl = document.createElement('span');
     $(spanEl).addClass('emptyHeart');
     $(spanEl).attr('tabindex', 0);
     let liEl = document.createElement('li');
