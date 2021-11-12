@@ -1,4 +1,3 @@
-import {keyObject} from 'config.js';
 var apiKey = keyObject.weatherKey;
 var ipKey = keyObject.ipInfoKey;
 let currentDate = new Date();
