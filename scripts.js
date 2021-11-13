@@ -1,4 +1,3 @@
-import {} from 'dotenv/config'
 var apiKey = process.env.WEATHER;
 var ipKey = process.env.IPINFO;
 let currentDate = new Date();
