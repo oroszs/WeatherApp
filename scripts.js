@@ -1,5 +1,5 @@
-var apiKey = process.env.WEATHER;
-var ipKey = process.env.IPINFO;
+var apiKey = keys.weather;
+var ipKey = keys.ipInfo;
 let currentDate = new Date();
 let dayString = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 let currentObject = {};
