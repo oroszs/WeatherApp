@@ -1,5 +1,7 @@
-var apiKey = keys.weather;
-var ipKey = keys.ipInfo;
+var apiKey = prompt('OpenWeather API Key: ');
+var ipKey = prompt('IPInfo API Key: ');
+//var apiKey = keys.weather;
+//var ipKey = keys.ipInfo;
 let currentDate = new Date();
 let dayString = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 let currentObject = {};
@@ -33,7 +35,7 @@ const clickSearch = (id) => {
 const getPosition = () => {
     return new Promise (function (resolve, reject) {
         navigator.geolocation.getCurrentPosition(resolve, reject);
-    })
+    });
 }
 const currentWeatherReject = () => {
     preciseLocation = false;

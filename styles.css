@@ -5,12 +5,12 @@ body{
     min-width: 1100px;
 }
 #wrapper {
-    position: relative;
+    position: absolute;
     margin: 0px auto;
-    width: 90%;
-    height: 700px;
-    border: solid #124a52 10px;
-    border-radius: 15px;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
 }
 #display {
     color: white;
