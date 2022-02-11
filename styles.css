@@ -251,7 +251,7 @@ li.loc:hover {
         font-size: 10pt;
     }
     .forecastIcon{
-        width: 14vw;
+        width: 12vw;
         height: 8vh;
     }
     #preciseButton{
@@ -286,7 +286,7 @@ li.loc:hover {
             background: #90e9f5;
             width: 5vw;
             height: 2.5vh;
-            margin: 50%;
+            margin: 40%;
             position: absolute;
         }
         to {
