@@ -37,6 +37,7 @@ const getPosition = () => {
 }
 const currentWeatherReject = () => {
     preciseLocation = false;
+    $('#locHead').html('Access Denied');
 }
 
 const setDisplay = (data, currentLoc) => {
