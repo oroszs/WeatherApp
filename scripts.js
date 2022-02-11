@@ -388,6 +388,7 @@ $('.textBox').on('mouseout', function() {
     $(this).css('background', '');
 });
 const fillDiv = (div, num) => {
+    $(div).addClass('inspectDiv');
     if($(div).hasClass('current')){
         let icon = `http://openweathermap.org/img/wn/${currentObject.weather[0].icon}@2x.png`;
         $(div).html(`
