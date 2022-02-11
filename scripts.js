@@ -286,8 +286,8 @@ const setFavorites = () => {
     let myJson = JSON.stringify(tempFavs);
     window.localStorage.setItem('favorites', myJson);
 }
-$('#preciseButton').click((event) => {
-    event.preventDefault();
+let preciseButton = document.getElementById('preciseButton');
+function precision(){
     if(!preciseLocation){
         preciseLocation = true;
         getPosition().then(
@@ -299,7 +299,7 @@ $('#preciseButton').click((event) => {
             },
         currentWeatherReject);
     }
-});
+}
 
 $('.arrow').click(function() {
     $(this).toggleClass('downArrow');
