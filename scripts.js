@@ -7,7 +7,6 @@ let forecastObject = {};
 let preciseLocation = false;
 let data = {};
 let savedFavs = [];
-$(init);
 const search = (cityString, stateString) => {
     if(cityString == '' && stateString == '') {
     }
@@ -420,3 +419,4 @@ const fillDiv = (div, num) => {
         </br>`);
     }
 }
+$(init);
