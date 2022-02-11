@@ -31,7 +31,7 @@ const clickSearch = (id) => {
     getCurrentWeather(url, false);
 }
 const getPosition = () => {
-    return new Promise (function (resolve, reject) {
+    return new Promise (function (resolve, currentWeatherReject) {
         navigator.geolocation.getCurrentPosition(resolve, currentWeatherReject);
     });
 }
