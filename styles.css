@@ -2,7 +2,6 @@ body{
     text-align: center;
     font-size: 18pt;
     font-family: Calibri;
-    min-width: 1100px;
 }
 #wrapper {
     position: absolute;
@@ -26,8 +25,8 @@ body{
 .current {
     color: black;
     position: relative;
-    width: 200px;
-    height: 200px;
+    width: 70vw;
+    height: 70vh;
     margin: 5% auto;
     border: solid rgb(255, 255, 255) 5px;
     border-radius: 10px;
@@ -58,7 +57,6 @@ body{
     display: flex;
     flex-direction:row;
     justify-content:flex-start;
-    min-width: 850px;
 }
 .forecastDiv{
     display: flex;
@@ -233,7 +231,15 @@ li.loc:hover {
     cursor:default;
 }
 @media screen and (max-width: 400px){
+    .current{
+        height: 30vh;
+        width: 75vw;
+    }
     #forecast{
         width: 80vw;
+    }
+    .forecastDiv{
+        width: 15vw;
+        height: 20vh;
     }
 }

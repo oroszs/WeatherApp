@@ -298,7 +298,9 @@ function precision(){
                 $('#preciseButton').fadeOut();
                 $('#ip').fadeOut();
             },
-        currentWeatherReject);
+        currentWeatherReject).catch((err) => {
+            currentWeatherReject();
+        });
     }
 }
 $('.search').on('focus', (event) => {
