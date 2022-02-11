@@ -301,19 +301,6 @@ $('#preciseButton').each(() => {
         }
     }
 });
-$('#preciseButton').click(function(){
-    if(!preciseLocation){
-        preciseLocation = true;
-        getPosition().then(
-            (response) => {
-                let url = `https://api.openweathermap.org/data/2.5/weather?lat=${response.coords.latitude}&lon=${response.coords.longitude}&units=imperial&appid=${apiKey}`;
-                getCurrentWeather(url, true);
-                $('#preciseButton').fadeOut();
-                $('#ip').fadeOut();
-            },
-        currentWeatherReject);
-    }
-});
 
 $('.arrow').click(function() {
     $(this).toggleClass('downArrow');
