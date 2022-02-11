@@ -210,27 +210,20 @@ li.loc:hover {
 .textBox:hover {
     background: #e0e0e0;
 }
-#preciseDiv{
+#preciseButton{
     float:right;
     position:absolute;
     display: block;
-    top:1%;
-    right:1%;
-    margin: 20px;
-    width:20%;
-    height:100px;
-}
-#preciseButton{
-    position: relative;
-    font-size:15pt;
+    top:8vh;
+    right:2vw;
+    width:10vw;
+    height:7vh;
+    font-size: 15pt;
     font-family: Calibri;
-    display: block;
-    width: 55%;
-    height: 55%;
-    margin: auto;
-    min-width:110px;
     cursor: pointer;
+    text-decoration: none;
 }
+
 .textBox{
     background: white;
 }

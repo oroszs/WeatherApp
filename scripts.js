@@ -286,19 +286,17 @@ const setFavorites = () => {
     let myJson = JSON.stringify(tempFavs);
     window.localStorage.setItem('favorites', myJson);
 }
-$('#preciseButton').on('click vclick', () => {
-    this.onclick = () => {
-        if(!preciseLocation){
-            preciseLocation = true;
-            getPosition().then(
-                (response) => {
-                    let url = `https://api.openweathermap.org/data/2.5/weather?lat=${response.coords.latitude}&lon=${response.coords.longitude}&units=imperial&appid=${apiKey}`;
-                    getCurrentWeather(url, true);
-                    $('#preciseButton').fadeOut();
-                    $('#ip').fadeOut();
-                },
-            currentWeatherReject);
-        }
+$('#preciseButton').click(() => {
+    if(!preciseLocation){
+        preciseLocation = true;
+        getPosition().then(
+            (response) => {
+                let url = `https://api.openweathermap.org/data/2.5/weather?lat=${response.coords.latitude}&lon=${response.coords.longitude}&units=imperial&appid=${apiKey}`;
+                getCurrentWeather(url, true);
+                $('#preciseButton').fadeOut();
+                $('#ip').fadeOut();
+            },
+        currentWeatherReject);
     }
 });
 
