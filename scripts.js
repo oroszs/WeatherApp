@@ -300,7 +300,9 @@ function precision(){
         currentWeatherReject);
     }
 }
-
+$('.search').on('focus', (event) => {
+    event.preventDefault();
+})
 $('.arrow').click(function() {
     $(this).toggleClass('downArrow');
     $(this).parent().children('.nest').slideToggle();
