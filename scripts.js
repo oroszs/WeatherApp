@@ -1,5 +1,5 @@
-var apiKey = keys.weather;
-var ipKey = keys.ipInfo;
+var apiKey = '1a9709178ee9dd9a2ba64da5856ceda6';
+var ipKey = 'b4cf109c7b587e';
 let currentDate = new Date();
 let dayString = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 let currentObject = {};
