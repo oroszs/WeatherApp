@@ -232,3 +232,8 @@ li.loc:hover {
 .ip:hover {
     cursor:default;
 }
+@media screen and (max-width: 400px){
+    #forecast{
+        width: 80vw;
+    }
+}
