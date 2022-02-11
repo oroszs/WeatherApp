@@ -25,23 +25,23 @@ body{
 .current {
     color: black;
     position: relative;
-    width: 70vw;
-    height: 70vh;
+    width: 15vw;
+    height: 30vh;
     margin: 5% auto;
     border: solid rgb(255, 255, 255) 5px;
     border-radius: 10px;
 }
 #searchDiv {
-    margin: 10px;
-    position: absolute;
+    margin: auto;
     width: 50%;
     height: 10%;
-    left: 50%;
-    transform: translate(-50%, 0);
-    bottom: 1.5%;
+    bottom: 0px;
     display: flex;
     flex-direction:row;
-    justify-content:flex-start;
+    justify-content:space-evenly;
+    align-items: center;
+    position: relative;
+    transform: translate(0, 0);
 }
 #forecast {
     color: black;
@@ -189,10 +189,9 @@ li.loc:hover {
     font-size: 13pt;
 }
 .textBox {
+    flex: none;
     color: black;
-    display: flex;
     position: relative;
-    justify-content: space-evenly;
     padding: 5px;
     outline: none;
     height: 50%;
@@ -200,10 +199,7 @@ li.loc:hover {
     border: solid black 3px;
     border-radius: 5px;
     box-shadow: 5px 5px 5px #252525;
-    margin: 10px;
     font-size: 15pt;
-    top: 50%;
-    transform: translate(0, -50%);
 }
 .textBox:hover {
     background: #e0e0e0;
@@ -236,10 +232,44 @@ li.loc:hover {
         width: 75vw;
     }
     #forecast{
-        width: 80vw;
+        width: 90vw;
+        height: 10vh;
+        border: solid white 2px;
+        bottom: 7vh;
     }
     .forecastDiv{
         width: 15vw;
+        height: 7.5vh;
+        font-size: 5pt;
+        box-shadow: black 2px 2px 2px;
+    }
+    .forecastIcon{
+        width: 20vw;
+        height: 10vh;
+    }
+    #preciseButton{
+        display: none;
+    }
+    #favorites{
+        display: none;
+    }
+    .textBox{
+        font-size: 10pt;
+        width: 25vw;
+        height: 5vh;
+        flex: none;
+    }
+    #searchDiv{
+        width: 95vw;
         height: 20vh;
+        bottom: 1vh;
+        position: relative;
+    }
+    #display{
+        left:0px;
+        right: 0px;
+        top: 0px;
+        width: auto;
+        height: 75vh;
     }
 }
