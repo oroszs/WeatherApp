@@ -1,7 +1,7 @@
 body{
     text-align: center;
     font-size: 18pt;
-    font-family: Calibri;
+    font-family: Calibri, Verdana, Geneva, Tahoma, sans-serif;
 }
 #wrapper {
     position: absolute;
