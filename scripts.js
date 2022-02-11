@@ -286,7 +286,7 @@ const setFavorites = () => {
     let myJson = JSON.stringify(tempFavs);
     window.localStorage.setItem('favorites', myJson);
 }
-$('#preciseButton').on('click touchstart', () => {
+$('#preciseButton').on('click vclick', () => {
     this.onclick = () => {
         if(!preciseLocation){
             preciseLocation = true;
