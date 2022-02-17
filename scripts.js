@@ -97,6 +97,8 @@ const getForecast = (lat, lon) => {
 }
 
 function init(){
+    let bg = $('#wrapper');
+    bg.height($(window).height());
     let ipUrl = `https://ipinfo.io?token=${ipKey}`;
     fetch(ipUrl).then(
         (response) => response.json()
