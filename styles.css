@@ -15,7 +15,7 @@ body{
     position: relative;
     margin: 1% auto;
     width: 90%;
-    height: 80%;
+    height: 80vh;
     background: #292929;
     border: solid black 5px;
     border-radius: 10px;
@@ -193,7 +193,7 @@ li.loc:hover {
     position: relative;
     padding: 5px;
     outline: none;
-    height: 40%;
+    height: 5vh;
     width: 25%;
     border: solid black 3px;
     border-radius: 5px;
@@ -202,6 +202,9 @@ li.loc:hover {
 }
 .textBox:hover {
     background: #e0e0e0;
+}
+#searchButton {
+    height: 7vh;
 }
 #preciseButton{
     float:right;
@@ -225,7 +228,7 @@ li.loc:hover {
 .ip:hover {
     cursor:default;
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 800px){
     #locHead{
         font-size: 40pt;
     }
