@@ -24,9 +24,9 @@ body{
 .current {
     color: black;
     position: relative;
-    width: 15vw;
+    width: 30vh;
     height: 30vh;
-    margin: 5% auto;
+    margin: 5vh auto;
     border: solid rgb(255, 255, 255) 5px;
     border-radius: 10px;
 }
@@ -234,7 +234,7 @@ li.loc:hover {
     }
     .current{
         height: 35vh;
-        width: 70vw;
+        width: 35vh;
         font-size: 16pt;
     }
     #forecast{
@@ -244,7 +244,7 @@ li.loc:hover {
         bottom: 7vh;
     }
     .forecastDiv{
-        width: 13vw;
+        width: 7.5vh;
         height: 7.5vh;
         font-size: 5pt;
         box-shadow: black 2px 2px 2px;
