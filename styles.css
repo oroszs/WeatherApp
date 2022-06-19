@@ -14,8 +14,8 @@ body{
     color: white;
     position: relative;
     margin: 1% auto;
-    width: 90%;
-    height: 80vh;
+    width: auto;
+    height: 80%;
     background: #292929;
     border: solid black 5px;
     border-radius: 10px;
@@ -24,8 +24,8 @@ body{
 .current {
     color: black;
     position: relative;
-    width: 30vh;
-    height: 30vh;
+    width: 200px;
+    height: 200px;
     margin: 5vh auto;
     border: solid rgb(255, 255, 255) 5px;
     border-radius: 10px;
@@ -228,24 +228,19 @@ li.loc:hover {
 .ip:hover {
     cursor:default;
 }
-@media screen and (max-width: 800px){
+@media screen and (max-width: 1000px){
     #locHead{
         font-size: 40pt;
     }
-    .current{
-        height: 35vh;
-        width: 35vh;
-        font-size: 16pt;
-    }
     #forecast{
-        width: 90vw;
-        height: 10vh;
+        width: 100%;
+        height: 75px;
         border: solid white 2px;
         bottom: 7vh;
     }
     .forecastDiv{
-        width: 7.5vh;
-        height: 7.5vh;
+        width: 50px;
+        height: 50px;
         font-size: 5pt;
         box-shadow: black 2px 2px 2px;
     }
@@ -273,30 +268,5 @@ li.loc:hover {
         height: 20vh;
         bottom: 1vh;
         position: relative;
-    }
-    #display{
-        left:0px;
-        right: 0px;
-        top: 0px;
-        width: auto;
-        height: 75vh;
-        border-radius: 0px;
-        margin: auto;
-    }
-    @keyframes enlarge {
-        from {
-            background: #90e9f5;
-            width: 5vw;
-            height: 2.5vh;
-            margin: 40vw;
-            position: absolute;
-        }
-        to {
-            background: #36f8ff;
-            width: 90vw;
-            height: 50vh;
-            margin: 1vh 1vw 1vw 1vh;
-            position: absolute;
-        }
     }
 }
