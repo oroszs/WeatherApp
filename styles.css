@@ -98,37 +98,39 @@ body{
 .hoverObj {
     transition: transform 1s;
 }
+#focusDivHolder{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    display: none;
+}
 .focusDiv{
     font-size: 18pt;
     display: block;
-    justify-content: none;
     animation: 750ms enlarge forwards;
     color: black;
     z-index: 10;
-    background: #acd9ff;
-    position: absolute;
     cursor: pointer;
     border: solid black 5px;
-    margin: 5% auto;
+    flex: none;
 }
 @keyframes enlarge {
     from {
         background: #90e9f5;
         width: 100px;
         height: 100px;
-        margin: 20% 46%;
     }
     to {
         background: #36f8ff;
         width: 500px;
         height: 500px;
-        margin: 5% 30%;
     }
-}
-#focusDivHolder {
-    z-index: 5;
-    position: relative;
-    display: none;
 }
 #favorites{
     text-align: left;
@@ -229,6 +231,16 @@ li.loc:hover {
     cursor:default;
 }
 @media screen and (max-width: 1000px){
+    @keyframes enlarge {
+        from {
+            width: 10px;
+            height: 10px;
+        }
+        to {
+            width: 300px;
+            height: 300px;
+        }
+    }
     #locHead{
         font-size: 40pt;
     }
