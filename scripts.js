@@ -155,6 +155,7 @@ $('.hoverObj').click(function() {
         }, 500);
         $(focusObj).addClass('focusDiv');
         $(focusObj).removeClass('hoverObj');
+        $(focusObj).removeClass('forecastDiv');
         $('#focusDivHolder').append(focusObj);
         focusBool = true;
     }
