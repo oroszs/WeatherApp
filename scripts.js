@@ -393,7 +393,7 @@ const fillDiv = (div, num) => {
     if($(div).hasClass('current')){
         let icon = `http://openweathermap.org/img/wn/${currentObject.weather[0].icon}@2x.png`;
         $(div).html(`
-        <strong style='font-size:21pt'>Today's Weather</strong><br>
+        <strong style='font-size:16pt'>Today's Weather</strong><br>
         ${currentObject.weather[0].main}<br>
         <img class='icon' src=${icon}>
         (${currentObject.weather[0].description})<br><br>
@@ -413,7 +413,7 @@ const fillDiv = (div, num) => {
         thisDate.setDate(currentDate.getDate() + parseInt(num));
         let day = dayString[thisDate.getDay()];
         $(div).html(`
-        <strong style='font-size:21pt'>${day}'s Weather</strong><br>
+        <strong style='font-size:16pt'>${day}'s Weather</strong><br>
         ${obj.weather[0].main}<br>
         <img class='icon' src=${icon}>
         (${obj.weather[0].description})<br><br>
